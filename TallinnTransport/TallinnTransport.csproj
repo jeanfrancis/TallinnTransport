@@ -97,7 +97,7 @@
     </Content>
     <Resource Include="img\Settings.png" />
     <Resource Include="img\Information.png" />
-    <Content Include="img\SplashScreenImage.jpg" />
+    <Content Include="SplashScreenImage.jpg" />
     <Resource Include="img\Train.png" />
   </ItemGroup>
   <ItemGroup>
