@@ -22,22 +22,22 @@ namespace TallinnTransport
 		
         private void TrolleyButton_Click(object sender, System.Windows.RoutedEventArgs e)
         {
-        	NavigationService.Navigate(new Uri("/Routes.xaml?routeType=Trolley", UriKind.Relative));
+        	NavigationService.Navigate(new Uri("/Routes.xaml?routeType=trolley", UriKind.Relative));
         }
 
         private void BusButton_Click(object sender, System.Windows.RoutedEventArgs e)
         {
-            NavigationService.Navigate(new Uri("/Routes.xaml?routeType=Bus", UriKind.Relative));
+            NavigationService.Navigate(new Uri("/Routes.xaml?routeType=bus", UriKind.Relative));
         }
 
         private void TramButton_Click(object sender, System.Windows.RoutedEventArgs e)
         {
-            NavigationService.Navigate(new Uri("/Routes.xaml?routeType=Tram", UriKind.Relative));
+            NavigationService.Navigate(new Uri("/Routes.xaml?routeType=tram", UriKind.Relative));
         }
 
         private void InfoButton_Click(object sender, System.Windows.RoutedEventArgs e)
         {
-            NavigationService.Navigate(new Uri("/Routes.xaml?routeType=Info", UriKind.Relative));
+            NavigationService.Navigate(new Uri("/Routes.xaml?routeType=info", UriKind.Relative));
         }
 		
     }

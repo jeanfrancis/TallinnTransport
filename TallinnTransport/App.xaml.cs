@@ -17,6 +17,20 @@ namespace TallinnTransport
 {
     public partial class App : Application
     {
+        private static TallinnRoutes tallinnRoutes = null;
+
+        public static TallinnRoutes TallinnRoutes
+        {
+            get
+            {
+                if (tallinnRoutes == null)
+                {
+                    tallinnRoutes = new TallinnRoutes();
+                }
+                return tallinnRoutes;
+            }
+        }
+
         /// <summary>
         /// Provides easy access to the root frame of the Phone Application.
         /// </summary>

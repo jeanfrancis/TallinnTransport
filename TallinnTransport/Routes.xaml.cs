@@ -18,7 +18,6 @@ namespace TallinnTransport
         public Routes()
         {
             InitializeComponent();	
-			createBussList();
         }
 		
         protected override void OnNavigatedTo(System.Windows.Navigation.NavigationEventArgs e)
@@ -26,17 +25,23 @@ namespace TallinnTransport
             string routeType = "";
             if (NavigationContext.QueryString.TryGetValue("routeType", out routeType))
             {
-                this.PageTitle.Text = "Tallinn: " + routeType;
-                //DataContext = App.NewsCollection.News[selectedNewsIndex];
+                if (routeType.Equals("bus"))
+                {
+                    this.PageTitle.Text = "Tallinn:Bus";
+                    this.RouteList.ItemsSource = App.TallinnRoutes.Bus;
+                }
+                else if (routeType.Equals("trolley"))
+                {
+                    this.PageTitle.Text = "Tallinn:Trolley";
+                    this.RouteList.ItemsSource = App.TallinnRoutes.Trolley;
+                }
+                else if (routeType.Equals("tram"))
+                {
+                    this.PageTitle.Text = "Tallinn:Tram";
+                    this.RouteList.ItemsSource = App.TallinnRoutes.Tram;
+                }
             }
         }
-
-		private void createBussList(){
-			var bussiliinid = new List<Route>();
-			bussiliinid.Add(new Route("1A","Viru keskus - Viimsi haigla"));
-			this.RouteList.ItemsSource = bussiliinid;
-		}
-
     }
 
 	public class Route {
