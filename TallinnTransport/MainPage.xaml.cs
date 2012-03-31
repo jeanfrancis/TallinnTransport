@@ -39,5 +39,6 @@ namespace TallinnTransport
         {
         	NavigationService.Navigate(new Uri("/Rong.xaml", UriKind.Relative));
         }
+		
     }
 }

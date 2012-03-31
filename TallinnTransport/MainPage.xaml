@@ -27,9 +27,19 @@
 		</StackPanel>
 
 		<!--ContentPanel - place additional content here-->
-		<StackPanel x:Name="ContentPanel" Grid.Row="1" Margin="10,0,10,0"/>
-		<Button x:Name="Buss_button" Content="Buss" VerticalAlignment="Top" Margin="12,8,188,0" Grid.Row="1" Height="78" Click="Buss_button_Click"/>
-		<Button x:Name="Troll_button" Content="Troll" VerticalAlignment="Top" Margin="12,90,188,0" Grid.Row="1" Height="79" Click="Troll_button_Click"/>
+		<StackPanel x:Name="ContentPanel" Grid.Row="1" Margin="20,0,0,0"/>
+		<Button x:Name="Buss_button" VerticalAlignment="Top" Margin="12,8,188,0" Grid.Row="1" Height="78" Click="Buss_button_Click" BorderThickness="0">
+			<StackPanel Orientation="Horizontal">
+			<Image Source="Bus.png" HorizontalAlignment="Left" Margin="-110,0,0,0" Width="40" />
+			<TextBlock Text="Buss" HorizontalAlignment="Left" Margin="-59,0,0,0" Width="51" VerticalAlignment="Center" /> 
+			</StackPanel>
+		</Button>
+		<Button x:Name="Troll_button"  VerticalAlignment="Top" Margin="12,90,188,0" Grid.Row="1" Height="79" Click="Troll_button_Click" BorderThickness="0">
+			<StackPanel Orientation="Horizontal">
+			<Image Source="Truck.png" HorizontalAlignment="Left" Margin="-110,0,0,0" Width="47" />
+			<TextBlock Text="Troll" HorizontalAlignment="Left" Margin="-59,0,0,0" Width="51" VerticalAlignment="Center" /> 
+			</StackPanel>
+		</Button>
 		<Button x:Name="Tramm_button" Content="Tramm" VerticalAlignment="Top" Margin="12,173,188,0" Grid.Row="1" Height="79" Click="Tramm_button_Click"/>
 		<Button x:Name="Rong_button" Content="Rong" Margin="12,252,188,276" Grid.Row="1" Click="Rong_button_Click"/>
 	</Grid>

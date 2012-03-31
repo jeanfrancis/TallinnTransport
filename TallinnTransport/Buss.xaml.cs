@@ -18,6 +18,24 @@ namespace TallinnTransport
         public Buss()
         {
             InitializeComponent();
+			createBussList();
         }
+		
+		private void createBussList(){
+			var bussiliinid = new List<BussiLiin>();
+			bussiliinid.Add(new BussiLiin("1A","Viru keskus - Viimsi haigla"));
+			BussiList.ItemsSource = bussiliinid;
+		}
+
     }
+	
+	public class BussiLiin {
+		public string Number {get; set;}
+		public string Pealkiri {get; set;}
+		
+		public BussiLiin(string Number, string Pealkiri){
+			this.Number=Number;
+			this.Pealkiri=Pealkiri;
+		}
+	}
 }
