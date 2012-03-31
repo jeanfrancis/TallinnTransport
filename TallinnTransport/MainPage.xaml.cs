@@ -37,7 +37,7 @@ namespace TallinnTransport
 
         private void InfoButton_Click(object sender, System.Windows.RoutedEventArgs e)
         {
-            NavigationService.Navigate(new Uri("/Routes.xaml?routeType=Settings", UriKind.Relative));
+            NavigationService.Navigate(new Uri("/Routes.xaml?routeType=Info", UriKind.Relative));
         }
 		
     }

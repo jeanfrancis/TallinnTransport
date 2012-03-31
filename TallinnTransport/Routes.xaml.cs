@@ -26,7 +26,7 @@ namespace TallinnTransport
             string routeType = "";
             if (NavigationContext.QueryString.TryGetValue("routeType", out routeType))
             {
-                this.PageTitle.Text = routeType;               
+                this.PageTitle.Text = "Tallinn: " + routeType;
                 //DataContext = App.NewsCollection.News[selectedNewsIndex];
             }
         }
