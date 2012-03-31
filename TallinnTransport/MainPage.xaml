@@ -10,7 +10,7 @@
 	FontFamily="{StaticResource PhoneFontFamilyNormal}"
 	FontSize="{StaticResource PhoneFontSizeNormal}"
 	Foreground="{StaticResource PhoneForegroundBrush}"
-	SupportedOrientations="Portrait" Orientation="Portrait"
+	SupportedOrientations="PortraitOrLandscape" Orientation="Portrait"
 	shell:SystemTray.IsVisible="True">
 
 	<!--LayoutRoot is the root grid where all page content is placed-->
@@ -20,27 +20,38 @@
 			<RowDefinition Height="*"/>
 		</Grid.RowDefinitions>
 
-		<!--TitlePanel contains the name of the application and page title-->
-		<StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
-			<TextBlock x:Name="ApplicationTitle" Text="Tallinn Transport" Style="{StaticResource PhoneTextNormalStyle}"/>
-			<TextBlock x:Name="PageTitle" Text="Transport" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
-		</StackPanel>
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock x:Name="ApplicationTitle" Text="Timetables" Style="{StaticResource PhoneTextNormalStyle}"/>
+            <TextBlock x:Name="PageTitle" Text="Tallinn" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+        </StackPanel>
 
-		<!--ContentPanel - place additional content here-->
-		<StackPanel x:Name="ContentPanel" Grid.Row="1" Margin="20,0,0,0"/>
-		<Button x:Name="Buss_button" VerticalAlignment="Top" Margin="12,8,188,0" Grid.Row="1" Height="78" Click="Buss_button_Click" BorderThickness="0">
-			<StackPanel Orientation="Horizontal">
-			<Image Source="Bus.png" HorizontalAlignment="Left" Margin="-110,0,0,0" Width="40" />
-			<TextBlock Text="Buss" HorizontalAlignment="Left" Margin="-59,0,0,0" Width="51" VerticalAlignment="Center" /> 
-			</StackPanel>
-		</Button>
-		<Button x:Name="Troll_button"  VerticalAlignment="Top" Margin="12,90,188,0" Grid.Row="1" Height="79" Click="Troll_button_Click" BorderThickness="0">
-			<StackPanel Orientation="Horizontal">
-			<Image Source="Truck.png" HorizontalAlignment="Left" Margin="-110,0,0,0" Width="47" />
-			<TextBlock Text="Troll" HorizontalAlignment="Left" Margin="-59,0,0,0" Width="51" VerticalAlignment="Center" /> 
-			</StackPanel>
-		</Button>
-		<Button x:Name="Tramm_button" Content="Tramm" VerticalAlignment="Top" Margin="12,173,188,0" Grid.Row="1" Height="79" Click="Tramm_button_Click"/>
-		<Button x:Name="Rong_button" Content="Rong" Margin="12,252,188,276" Grid.Row="1" Click="Rong_button_Click"/>
-	</Grid>
+        <!--ContentPanel - place additional content here-->
+        <StackPanel x:Name="ContentPanel" Grid.Row="1" HorizontalAlignment="Left" Margin="0">
+            <Button x:Name="TrammButton" Click="TramButton_Click" HorizontalAlignment="Left" Margin="0" BorderThickness="0" Padding="0">
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="img/Train.png" Margin="10,0,10,0"/>
+                    <TextBlock Text="Tram" VerticalAlignment="Center"/>
+                </StackPanel>
+            </Button>
+            <Button x:Name="TrollButton" Click="TrolleyButton_Click" HorizontalAlignment="Left" Margin="0" BorderThickness="0" Padding="0">
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="img/Truck.png" Margin="10,0,10,0"/>
+                    <TextBlock Text="Trolley" VerticalAlignment="Center"/>
+                </StackPanel>
+            </Button>
+            <Button x:Name="BusButton" Click="BusButton_Click" HorizontalAlignment="Left" Margin="0" BorderThickness="0" Padding="0">
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="img/Bus.png" Margin="10,0,10,0"/>
+                    <TextBlock Text="Bus" VerticalAlignment="Center"/>
+                </StackPanel>
+            </Button>
+            <Button x:Name="InfoButton" Click="InfoButton_Click" HorizontalAlignment="Left" Margin="0" BorderThickness="0" Padding="0">
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="img/Information.png" Margin="10,0,10,0"/>
+                    <TextBlock Text="Info" VerticalAlignment="Center"/>
+                </StackPanel>
+            </Button>
+        </StackPanel>
+    </Grid>
 </phone:PhoneApplicationPage>

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Deployment xmlns="http://schemas.microsoft.com/windowsphone/2009/deployment" AppPlatformVersion="7.1">
   <App xmlns="" ProductID="{3e6d82f0-a911-4eaf-87af-7f70ef5aa2ce}" Title="TallinnTransport" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal"  Author="TallinnTransport author" Description="Sample description" Publisher="TallinnTransport">
-    <IconPath IsRelative="true" IsResource="false">ApplicationIcon.png</IconPath>
+    <IconPath IsRelative="true" IsResource="false">img/ApplicationIcon.png</IconPath>
     <Capabilities>
       <Capability Name="ID_CAP_GAMERSERVICES"/>
       <Capability Name="ID_CAP_IDENTITY_DEVICE"/>
@@ -24,7 +24,7 @@
     <Tokens>
       <PrimaryToken TokenID="TallinnTransportToken" TaskName="_default">
         <TemplateType5>
-          <BackgroundImageURI IsRelative="true" IsResource="false">Background.png</BackgroundImageURI>
+          <BackgroundImageURI IsRelative="true" IsResource="false">img/Background.png</BackgroundImageURI>
           <Count>0</Count>
           <Title>TallinnTransport</Title>
         </TemplateType5>
