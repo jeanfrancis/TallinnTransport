@@ -17,29 +17,28 @@ Inspired by other platform Apps
 
 - Transport Tallinn (Android)
 https://play.google.com/store/apps/details?id=com.spruds.transport.tallin
-
 - Tallinn Public Transport (iPhone)
 http://itunes.apple.com/mt/app/stops-tallinn-public-transport/id491452114?mt=8
 
 
 Data Sources: Soiduplaan & Peatus.ee
 ====================================
+http://soiduplaan.tallinn.ee/olddesign/
 - http://soiduplaan.tallinn.ee/data/routes.txt
 - http://soiduplaan.tallinn.ee/data/stops.txt
 - http://www.peatus.ee/estonia/stops.txt
 - http://www.peatus.ee/estonia/routes.txt
 
-http://soiduplaan.tallinn.ee/olddesign/
-
 
 TODO
 ====
-- Switch to Panorama mode
+- Add Two-Ways Bus stop info on Stop page
+- Recode app with Panorama mode (restructure menus)
 - Show times based on Bus line and stop from data (XML)
 - Use GPS to find closest stop near you
-- Use Clock to hide past next times
-- Trip Planner - find shortest route / time / money between two stops
-- Settings for enable/disable GPS and update XML data
+- Use Clock to hide past times
+- Trip Planner: find shortest route / time / money between two stops
+- Settings for enable/disable GPS stop location and update XML data
 
 
 Resources
