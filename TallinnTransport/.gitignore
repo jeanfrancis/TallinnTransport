@@ -1,0 +1,4 @@
+# Ignore Visual Studio binary files
+Bin/*
+obj/*
+

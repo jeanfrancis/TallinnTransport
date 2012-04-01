@@ -34,6 +34,7 @@ TODO
 ====
 - Add Two-Ways Bus stop info on Stop page
 - Recode app with Panorama mode (restructure menus)
+- I18N: translate app to Estonian and Russian
 - Show times based on Bus line and stop from data (XML)
 - Use GPS to find closest stop near you
 - Use Clock to hide past times
