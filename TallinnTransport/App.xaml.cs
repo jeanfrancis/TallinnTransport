@@ -17,6 +17,24 @@ namespace TallinnTransport
 {
     public partial class App : Application
     {
+
+
+        private static MainViewModel viewModel = null;
+
+        public static MainViewModel ViewModel
+        {
+            get
+            {
+                if (viewModel == null)
+                {
+                    viewModel = new MainViewModel();
+                }
+                return viewModel;
+            }
+        }
+        
+ 
+        
         private static TallinnRoutes tallinnRoutes = null;
 
         public static TallinnRoutes TallinnRoutes
@@ -77,6 +95,10 @@ namespace TallinnTransport
         // This code will not execute when the application is first launched
         private void Application_Activated(object sender, ActivatedEventArgs e)
         {
+            if (!App.ViewModel.IsDataLoaded)
+            {
+                App.ViewModel.LoadData();
+            }
         }
 
         // Code to execute when the application is deactivated (sent to background)

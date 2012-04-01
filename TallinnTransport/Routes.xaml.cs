@@ -18,6 +18,8 @@ namespace TallinnTransport
         public Routes()
         {
             InitializeComponent();
+            App.ViewModel.LoadData();
+            DataContext = App.ViewModel;
             this.RouteList.SelectionChanged += new SelectionChangedEventHandler(RouteList_SelectionChanged);
         }
 		
@@ -29,17 +31,17 @@ namespace TallinnTransport
                 if (routeType.Equals("bus"))
                 {
                     this.PageTitle.Text = "Tallinn:Bus";
-                    this.RouteList.ItemsSource = App.TallinnRoutes.Bus;
+                    //this.RouteList.ItemsSource = App.TallinnRoutes.Bus;
                 }
                 else if (routeType.Equals("trolley"))
                 {
                     this.PageTitle.Text = "Tallinn:Trolley";
-                    this.RouteList.ItemsSource = App.TallinnRoutes.Trolley;
+                    //this.RouteList.ItemsSource = App.TallinnRoutes.Trolley;
                 }
                 else if (routeType.Equals("tram"))
                 {
                     this.PageTitle.Text = "Tallinn:Tram";
-                    this.RouteList.ItemsSource = App.TallinnRoutes.Tram;
+                    //this.RouteList.ItemsSource = App.TallinnRoutes.Tram;
                 }
             }
         }
@@ -56,7 +58,9 @@ namespace TallinnTransport
         public string Type { get; set; }
 		public string Number {get; set;}
 		public string Name {get; set;}
-		
+
+        public Route() { }
+
 		public Route(string Number, string Name){
 			this.Number=Number;
 			this.Name=Name;

@@ -57,6 +57,8 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Net" />
     <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml.Serialization" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
@@ -73,6 +75,8 @@
     <Compile Include="Routes.xaml.cs">
       <DependentUpon>Routes.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ViewModels\ItemViewModel.cs" />
+    <Compile Include="ViewModels\MainViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
@@ -109,6 +113,7 @@
     <Resource Include="Marketplace_Desktop_200x200.png" />
     <Resource Include="Marketplace_Device_173x173.png" />
     <Resource Include="Marketplace_Device_99x99.png" />
+    <Content Include="routes.xml" />
     <Content Include="SplashScreenImage.jpg" />
     <Resource Include="img\Train.png" />
   </ItemGroup>
