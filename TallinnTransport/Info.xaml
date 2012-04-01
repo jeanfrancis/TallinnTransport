@@ -1,5 +1,5 @@
 ﻿<phone:PhoneApplicationPage 
-    x:Class="TallinnTransport.ViewModels.Times"
+    x:Class="TallinnTransport.Info"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
@@ -23,21 +23,12 @@
         <!--TitlePanel contains the name of the application and page title-->
         <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
             <TextBlock x:Name="ApplicationTitle" Text="Timetables" Style="{StaticResource PhoneTextNormalStyle}"/>
-            <TextBlock x:Name="PageTitle" Text="Tallinn:Times" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+            <TextBlock x:Name="PageTitle" Text="Info" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
         </StackPanel>
 
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-            <ListBox x:Name="TimeList" ItemsSource="{Binding Times}">
-                <ListBox.ItemTemplate>
-                    <DataTemplate>
-                        <StackPanel Orientation="Horizontal">
-                            <TextBlock Text="{Binding Hour}" Margin="10,0,10,0" FontSize="26" FontWeight="Bold" />
-                            <TextBlock Text="{Binding Minutes}" FontSize="24" VerticalAlignment="Center" />
-                        </StackPanel>
-                    </DataTemplate>
-                </ListBox.ItemTemplate>
-            </ListBox>
+            <TextBlock Text="Timetables:Tallinn was done in WP7 Code Camp 24h by Daniel Arruda and Steven Murekas. Source Code at: https://github.com/dasanjos/TallinnTransport" Margin="10,0,10,0" FontSize="25" TextWrapping="Wrap"/>
         </Grid>
     </Grid>
 </phone:PhoneApplicationPage>
