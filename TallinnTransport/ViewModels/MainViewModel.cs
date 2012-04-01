@@ -28,31 +28,24 @@ namespace TallinnTransport
             this.Busses = new ObservableCollection<ItemViewModel>();
         }
 
-        /// <summary>
-        /// A collection for ItemViewModel objects.
-        /// </summary>
         public ObservableCollection<ItemViewModel> Trams { get; private set; }
         public ObservableCollection<ItemViewModel> Trolleis { get; private set; }
         public ObservableCollection<ItemViewModel> Busses { get; private set; }
 
 
-        private string _sampleProperty = "Sample Runtime Property Value";
-        /// <summary>
-        /// Sample ViewModel property; this property is used in the view to display its value using a Binding
-        /// </summary>
-        /// <returns></returns>
-        public string SampleProperty
+        private string _routeType = "bus";
+        public string RouteType
         {
             get
             {
-                return _sampleProperty;
+                return _routeType;
             }
             set
             {
-                if (value != _sampleProperty)
+                if (value != _routeType)
                 {
-                    _sampleProperty = value;
-                    NotifyPropertyChanged("SampleProperty");
+                    _routeType = value;
+                    NotifyPropertyChanged("RouteType");
                 }
             }
         }
@@ -63,25 +56,20 @@ namespace TallinnTransport
             private set;
         }
 
-        /// <summary>
-        /// Creates and adds a few ItemViewModel objects into the Items collection.
-        /// </summary>
-        public void LoadData()
-        {
-            // Sample data; replace with real data
-            this.Trams.Add(new ItemViewModel() { Name = "runtime one", Number = "Maecenas praesent accumsan bibendum"});
-            this.Trolleis.Add(new ItemViewModel() { Name = "runtime one", Number = "Maecenas praesent accumsan bibendum" });
-            this.Busses.Add(new ItemViewModel() { Name = "runtime one", Number = "Maecenas praesent accumsan bibendum" });
-            
-            StreamResourceInfo xml = Application.GetResourceStream(new Uri("routes.xml", UriKind.Relative));
+        public void LoadData(string RouteType)
+        {            
+           StreamResourceInfo xml = Application.GetResourceStream(new Uri("routes.xml", UriKind.Relative));
             XDocument doc = XDocument.Load(xml.Stream);
-            var trams = from n in doc.Descendants("Route")
+            var routes = from n in doc.Descendants(RouteType).Descendants("Route")
                        select new ItemViewModel()
                        {
                            Number = n.Attribute("Number").Value,
                            Name = n.Attribute("Name").Value
                        };
-            App.ViewModel.Trams = new ObservableCollection<ItemViewModel>(trams);
+           //App.ViewModel.Trams = new ObservableCollection<ItemViewModel>(trams);
+            App.ViewModel.Trams.Clear();
+            foreach (var x in routes)
+                App.ViewModel.Trams.Add(x);
 
             this.IsDataLoaded = true;
         }

@@ -16,10 +16,6 @@ namespace TallinnTransport
     public class ItemViewModel : INotifyPropertyChanged
     {
         private string _name;
-        /// <summary>
-        /// Sample ViewModel property; this property is used in the view to display its value using a Binding.
-        /// </summary>
-        /// <returns></returns>
         public string Name
         {
             get
@@ -37,10 +33,6 @@ namespace TallinnTransport
         }
 
         private string _number;
-        /// <summary>
-        /// Sample ViewModel property; this property is used in the view to display its value using a Binding.
-        /// </summary>
-        /// <returns></returns>
         public string Number
         {
             get
@@ -56,8 +48,6 @@ namespace TallinnTransport
                 }
             }
         }
-
-
 
         public event PropertyChangedEventHandler PropertyChanged;
         private void NotifyPropertyChanged(String propertyName)
