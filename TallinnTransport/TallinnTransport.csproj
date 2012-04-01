@@ -74,6 +74,10 @@
     <Compile Include="Routes.xaml.cs">
       <DependentUpon>Routes.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Times.xaml.cs">
+      <DependentUpon>Times.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModels\TimeViewModel.cs" />
     <Compile Include="ViewModels\StopViewModel.cs" />
     <Compile Include="ViewModels\RouteViewModel.cs" />
     <Compile Include="ViewModels\MainViewModel.cs" />
@@ -95,6 +99,10 @@
       <Generator>MSBuild:MarkupCompilePass1</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="Times.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\AppManifest.xml" />
@@ -113,6 +121,7 @@
     <Resource Include="Marketplace_Desktop_200x200.png" />
     <Resource Include="Marketplace_Device_173x173.png" />
     <Resource Include="Marketplace_Device_99x99.png" />
+    <Content Include="DataSource\times.xml" />
     <Content Include="DataSource\stops.xml" />
     <Content Include="DataSource\routes.xml" />
     <Content Include="SplashScreenImage.jpg" />

@@ -1,76 +1,76 @@
 <Stops>
-  <Route Type="Tram" Number="1">
-    <Stop Name="Kopli"/>
-    <Stop Name="Sepa"/>
-    <Stop Name="Sirbi"/>
-    <Stop Name="Maleva"/>
-    <Stop Name="Sitsi"/>
-    <Stop Name="Angerja"/>
-    <Stop Name="Volta"/>
-    <Stop Name="Telliskivi"/>
-    <Stop Name="Balti jaam"/>
-    <Stop Name="Põhja puiestee"/>
-    <Stop Name="Linnahall"/>
-    <Stop Name="Mere puiestee"/>
-    <Stop Name="Hobujaama"/>
-    <Stop Name="Tallinna Ülikool"/>
-    <Stop Name="L.Koidula"/>
-    <Stop Name="Kadriorg"/>
-  </Route>
-  <Route Type="Tram" Number="2">
-    <Stop Name="Kopli"/>
-    <Stop Name="Sepa"/>
-    <Stop Name="Sirbi"/>
-    <Stop Name="Maleva"/>
-    <Stop Name="Sitsi"/>
-    <Stop Name="Angerja"/>
-    <Stop Name="Volta"/>
-    <Stop Name="Telliskivi"/>
-    <Stop Name="Balti jaam"/>
-    <Stop Name="Põhja puiestee"/>
-    <Stop Name="Linnahall"/>
-    <Stop Name="Mere puiestee"/>
-    <Stop Name="Hobujaama"/>
-    <Stop Name="Paberi"/>
-    <Stop Name="Keskturg"/>
-    <Stop Name="Autobussijaam"/>
-    <Stop Name="Lubja"/>
-    <Stop Name="Majaka"/>
-    <Stop Name="Sikupilli"/>
-    <Stop Name="Majaka põik"/>
-    <Stop Name="Väike-Paala"/>
-    <Stop Name="Ülemiste"/>
-  </Route>
-  <Route Type="Tram" Number="3" Name="Tondi - Kadriorg">
-    <Stop Name="Tondi"/>
-    <Stop Name="Kalev"/>
-    <Stop Name="Tallinn-Väike"/>
-    <Stop Name="Vineeri"/>
-    <Stop Name="Kosmos"/>
-    <Stop Name="Vabaduse väljak"/>
-    <Stop Name="Viru"/>
-    <Stop Name="Hobujaama"/>
-    <Stop Name="Tallinna Ülikool"/>
-    <Stop Name="L.Koidula"/>
-    <Stop Name="Kadriorg"/>
-  </Route>
-  <Route Type="Tram" Number="4" Name="Tondi - Ülemiste">
-    <Stop Name="Tondi"/>
-    <Stop Name="Kalev"/>
-    <Stop Name="Tallinn-Väike"/>
-    <Stop Name="Vineeri"/>
-    <Stop Name="Kosmos"/>
-    <Stop Name="Vabaduse väljak"/>
-    <Stop Name="Viru"/>
-    <Stop Name="Hobujaama"/>
-    <Stop Name="Paberi"/>
-    <Stop Name="Keskturg"/>
-    <Stop Name="Autobussijaam"/>
-    <Stop Name="Lubja"/>
-    <Stop Name="Majaka"/>
-    <Stop Name="Sikupilli"/>
-    <Stop Name="Majaka põik"/>
-    <Stop Name="Väike-Paala"/>
-    <Stop Name="Ülemiste"/>
-  </Route>
+  <Tram-1>
+    <Stop Id="1" Name="Kopli"/>
+    <Stop Id="2" Name="Sepa"/>
+    <Stop Id="3" Name="Sirbi"/>
+    <Stop Id="4" Name="Maleva"/>
+    <Stop Id="5" Name="Sitsi"/>
+    <Stop Id="6" Name="Angerja"/>
+    <Stop Id="7" Name="Volta"/>
+    <Stop Id="8" Name="Telliskivi"/>
+    <Stop Id="9" Name="Balti jaam"/>
+    <Stop Id="10" Name="Põhja puiestee"/>
+    <Stop Id="11" Name="Linnahall"/>
+    <Stop Id="12" Name="Mere puiestee"/>
+    <Stop Id="13" Name="Hobujaama"/>
+    <Stop Id="14" Name="Tallinna Ülikool"/>
+    <Stop Id="15" Name="L.Koidula"/>
+    <Stop Id="16" Name="Kadriorg"/>
+  </Tram-1>
+  <Tram-2>
+    <Stop Id="1" Name="Kopli"/>
+    <Stop Id="1" Name="Sepa"/>
+    <Stop Id="1" Name="Sirbi"/>
+    <Stop Id="1" Name="Maleva"/>
+    <Stop Id="1" Name="Sitsi"/>
+    <Stop Id="1" Name="Angerja"/>
+    <Stop Id="1" Name="Volta"/>
+    <Stop Id="1" Name="Telliskivi"/>
+    <Stop Id="1" Name="Balti jaam"/>
+    <Stop Id="1" Name="Põhja puiestee"/>
+    <Stop Id="1" Name="Linnahall"/>
+    <Stop Id="1" Name="Mere puiestee"/>
+    <Stop Id="1" Name="Hobujaama"/>
+    <Stop Id="1" Name="Paberi"/>
+    <Stop Id="1" Name="Keskturg"/>
+    <Stop Id="1" Name="Autobussijaam"/>
+    <Stop Id="1" Name="Lubja"/>
+    <Stop Id="1" Name="Majaka"/>
+    <Stop Id="1" Name="Sikupilli"/>
+    <Stop Id="1" Name="Majaka põik"/>
+    <Stop Id="1" Name="Väike-Paala"/>
+    <Stop Id="1" Name="Ülemiste"/>
+  </Tram-2>
+  <Tram-3>
+    <Stop Id="1" Name="Tondi"/>
+    <Stop Id="1" Name="Kalev"/>
+    <Stop Id="1" Name="Tallinn-Väike"/>
+    <Stop Id="1" Name="Vineeri"/>
+    <Stop Id="1" Name="Kosmos"/>
+    <Stop Id="1" Name="Vabaduse väljak"/>
+    <Stop Id="1" Name="Viru"/>
+    <Stop Id="1" Name="Hobujaama"/>
+    <Stop Id="1" Name="Tallinna Ülikool"/>
+    <Stop Id="1" Name="L.Koidula"/>
+    <Stop Id="1" Name="Kadriorg"/>
+  </Tram-3>
+  <Tram-4>
+    <Stop Id="1" Name="Tondi"/>
+    <Stop Id="1" Name="Kalev"/>
+    <Stop Id="1" Name="Tallinn-Väike"/>
+    <Stop Id="1" Name="Vineeri"/>
+    <Stop Id="1" Name="Kosmos"/>
+    <Stop Id="1" Name="Vabaduse väljak"/>
+    <Stop Id="1" Name="Viru"/>
+    <Stop Id="1" Name="Hobujaama"/>
+    <Stop Id="1" Name="Paberi"/>
+    <Stop Id="1" Name="Keskturg"/>
+    <Stop Id="1" Name="Autobussijaam"/>
+    <Stop Id="1" Name="Lubja"/>
+    <Stop Id="1" Name="Majaka"/>
+    <Stop Id="1" Name="Sikupilli"/>
+    <Stop Id="1" Name="Majaka põik"/>
+    <Stop Id="1" Name="Väike-Paala"/>
+    <Stop Id="1" Name="Ülemiste"/>
+  </Tram-4>
 </Stops>

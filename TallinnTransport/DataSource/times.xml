@@ -1,0 +1,23 @@
+<Times>
+  <Tram-1-1>
+    <Time Hour="05" Minutes="10 25 40 50"/>
+    <Time Hour="06" Minutes="00 10 20 27 34 41 48 56"/>
+    <Time Hour="07" Minutes="04 10 16 22 28 34 39 44 49 54 59"/>
+    <Time Hour="08" Minutes="04 09 14 19 24 29 35 40 46 51 57"/>
+    <Time Hour="09" Minutes="03 10 16 22 29 36 43 49 56"/>
+    <Time Hour="10" Minutes="03 10 16 23 30 36 43 50 56"/>
+    <Time Hour="11" Minutes="03 10 16 23 29 36 42 49 56"/>
+    <Time Hour="12" Minutes="02 08 14 20 27 33 39 45 52"/>
+    <Time Hour="13" Minutes="01 08 15 22 29 37 43 49 55"/>
+    <Time Hour="14" Minutes="00 05 10 16 24 30 36 41 47 56"/>
+    <Time Hour="15" Minutes="03 09 18 24 30 36 42 48 54"/>
+    <Time Hour="16" Minutes="03 10 16 23 32 40 50 59"/>
+    <Time Hour="17" Minutes="08 17 26 35 45 55"/>
+    <Time Hour="18" Minutes="05 15 25 35 45 55"/>
+    <Time Hour="19" Minutes="05 15 25 35 45 55"/>
+    <Time Hour="20" Minutes="11 27 43"/>
+    <Time Hour="21" Minutes="00 20 40"/>
+    <Time Hour="22" Minutes="00 20 40"/>
+    <Time Hour="23" Minutes="00 20 40"/>
+  </Tram-1-1>
+</Times>

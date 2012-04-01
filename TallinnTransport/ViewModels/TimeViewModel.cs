@@ -13,38 +13,38 @@ using System.Windows.Shapes;
 
 namespace TallinnTransport
 {
-    public class StopViewModel : INotifyPropertyChanged
+    public class TimeViewModel : INotifyPropertyChanged
     {
-        private string _name;
-        public string Name
+        private string _hour;
+        public string Hour
         {
             get
             {
-                return _name;
+                return _hour;
             }
             set
             {
-                if (value != _name)
+                if (value != _hour)
                 {
-                    _name = value;
-                    NotifyPropertyChanged("Name");
+                    _hour = value;
+                    NotifyPropertyChanged("Hour");
                 }
             }
         }
 
-        private string _id;
-        public string Id
+        private string _minutes;
+        public string Minutes
         {
             get
             {
-                return _id;
+                return _minutes;
             }
             set
             {
-                if (value != _id)
+                if (value != _minutes)
                 {
-                    _id = value;
-                    NotifyPropertyChanged("Id");
+                    _minutes = value;
+                    NotifyPropertyChanged("Minutes");
                 }
             }
         }

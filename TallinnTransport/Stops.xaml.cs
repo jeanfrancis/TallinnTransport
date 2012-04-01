@@ -32,8 +32,8 @@ namespace TallinnTransport
         {
             ListBox list = sender as ListBox;
             RouteViewModel item = list.SelectedItem as RouteViewModel;
-            App.ViewModel.RouteNumber = item.Number;
-            NavigationService.Navigate(new Uri("/Stops.xaml", UriKind.Relative));
+            App.ViewModel.StopId = "1";
+            NavigationService.Navigate(new Uri("/Times.xaml", UriKind.Relative));
         }
     }
 }

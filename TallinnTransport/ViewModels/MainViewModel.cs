@@ -23,7 +23,7 @@ namespace TallinnTransport
     {
         public ObservableCollection<RouteViewModel> Routes { get; private set; }
         public ObservableCollection<StopViewModel> Stops { get; private set; }
-        public ObservableCollection<RouteViewModel> Times { get; private set; }
+        public ObservableCollection<TimeViewModel> Times { get; private set; }
 
         public string RouteType { get; set; }
         public string RouteNumber { get; set; }
@@ -33,7 +33,7 @@ namespace TallinnTransport
         {
             this.Routes = new ObservableCollection<RouteViewModel>();
             this.Stops = new ObservableCollection<StopViewModel>();
-            this.Times = new ObservableCollection<RouteViewModel>();
+            this.Times = new ObservableCollection<TimeViewModel>();
         }
 
         public void LoadRoutes()
@@ -58,16 +58,33 @@ namespace TallinnTransport
         {
             StreamResourceInfo xml = Application.GetResourceStream(new Uri("DataSource/stops.xml", UriKind.Relative));
             XDocument doc = XDocument.Load(xml.Stream);
-            var stops = from n in doc.Descendants("Stop")
+            var stops = from n in doc.Descendants(this.RouteType+"-"+this.RouteNumber).Descendants("Stop")
                          select new StopViewModel()
                          {
-                             //Number = n.Attribute("Number").Value,
+                             Id = n.Attribute("Id").Value,
                              Name = n.Attribute("Name").Value
                          };
             App.ViewModel.Stops.Clear();
             foreach (var x in stops)
             {
                 App.ViewModel.Stops.Add(x);
+            }
+        }
+
+        public void LoadTimes()
+        {
+            StreamResourceInfo xml = Application.GetResourceStream(new Uri("DataSource/times.xml", UriKind.Relative));
+            XDocument doc = XDocument.Load(xml.Stream);
+            var times = from n in doc.Descendants(this.RouteType + "-" + this.RouteNumber + "-" + this.StopId).Descendants("Time")
+                        select new TimeViewModel()
+                        {
+                            Hour = n.Attribute("Hour").Value,
+                            Minutes = n.Attribute("Minutes").Value
+                        };
+            App.ViewModel.Times.Clear();
+            foreach (var x in times)
+            {
+                App.ViewModel.Times.Add(x);
             }
         }
 
