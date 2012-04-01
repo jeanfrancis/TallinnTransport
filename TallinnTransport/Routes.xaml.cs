@@ -18,7 +18,8 @@ namespace TallinnTransport
         public Routes()
         {
             InitializeComponent();
-            App.ViewModel.LoadData();
+            if(!App.ViewModel.IsDataLoaded)
+                App.ViewModel.LoadData();
             DataContext = App.ViewModel;
             this.RouteList.SelectionChanged += new SelectionChangedEventHandler(RouteList_SelectionChanged);
         }
@@ -49,21 +50,8 @@ namespace TallinnTransport
         void RouteList_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             ListBox list = sender as ListBox;
-            Route item = list.SelectedItem as Route;
+            ItemViewModel item = list.SelectedItem as ItemViewModel;
             NavigationService.Navigate(new Uri("/Stops.xaml?routeType=trolley&route="+item.Number, UriKind.Relative));
         }
     }
-
-	public class Route {
-        public string Type { get; set; }
-		public string Number {get; set;}
-		public string Name {get; set;}
-
-        public Route() { }
-
-		public Route(string Number, string Name){
-			this.Number=Number;
-			this.Name=Name;
-		}
-	}
 }
