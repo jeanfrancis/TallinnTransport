@@ -17,7 +17,8 @@ namespace TallinnTransport
     {
         public Routes()
         {
-            InitializeComponent();	
+            InitializeComponent();
+            this.RouteList.SelectionChanged += new SelectionChangedEventHandler(RouteList_SelectionChanged);
         }
 		
         protected override void OnNavigatedTo(System.Windows.Navigation.NavigationEventArgs e)
@@ -41,6 +42,13 @@ namespace TallinnTransport
                     this.RouteList.ItemsSource = App.TallinnRoutes.Tram;
                 }
             }
+        }
+
+        void RouteList_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            ListBox list = sender as ListBox;
+            Route item = list.SelectedItem as Route;
+            NavigationService.Navigate(new Uri("/Stops.xaml?routeType=trolley&route="+item.Number, UriKind.Relative));
         }
     }
 
