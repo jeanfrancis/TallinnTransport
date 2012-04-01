@@ -13,7 +13,7 @@ using System.Windows.Shapes;
 
 namespace TallinnTransport
 {
-    public class ItemViewModel : INotifyPropertyChanged
+    public class StopViewModel : INotifyPropertyChanged
     {
         private string _name;
         public string Name

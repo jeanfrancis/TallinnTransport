@@ -1,0 +1,76 @@
+<Stops>
+  <Route Type="Tram" Number="1">
+    <Stop Name="Kopli"/>
+    <Stop Name="Sepa"/>
+    <Stop Name="Sirbi"/>
+    <Stop Name="Maleva"/>
+    <Stop Name="Sitsi"/>
+    <Stop Name="Angerja"/>
+    <Stop Name="Volta"/>
+    <Stop Name="Telliskivi"/>
+    <Stop Name="Balti jaam"/>
+    <Stop Name="Põhja puiestee"/>
+    <Stop Name="Linnahall"/>
+    <Stop Name="Mere puiestee"/>
+    <Stop Name="Hobujaama"/>
+    <Stop Name="Tallinna Ülikool"/>
+    <Stop Name="L.Koidula"/>
+    <Stop Name="Kadriorg"/>
+  </Route>
+  <Route Type="Tram" Number="2">
+    <Stop Name="Kopli"/>
+    <Stop Name="Sepa"/>
+    <Stop Name="Sirbi"/>
+    <Stop Name="Maleva"/>
+    <Stop Name="Sitsi"/>
+    <Stop Name="Angerja"/>
+    <Stop Name="Volta"/>
+    <Stop Name="Telliskivi"/>
+    <Stop Name="Balti jaam"/>
+    <Stop Name="Põhja puiestee"/>
+    <Stop Name="Linnahall"/>
+    <Stop Name="Mere puiestee"/>
+    <Stop Name="Hobujaama"/>
+    <Stop Name="Paberi"/>
+    <Stop Name="Keskturg"/>
+    <Stop Name="Autobussijaam"/>
+    <Stop Name="Lubja"/>
+    <Stop Name="Majaka"/>
+    <Stop Name="Sikupilli"/>
+    <Stop Name="Majaka põik"/>
+    <Stop Name="Väike-Paala"/>
+    <Stop Name="Ülemiste"/>
+  </Route>
+  <Route Type="Tram" Number="3" Name="Tondi - Kadriorg">
+    <Stop Name="Tondi"/>
+    <Stop Name="Kalev"/>
+    <Stop Name="Tallinn-Väike"/>
+    <Stop Name="Vineeri"/>
+    <Stop Name="Kosmos"/>
+    <Stop Name="Vabaduse väljak"/>
+    <Stop Name="Viru"/>
+    <Stop Name="Hobujaama"/>
+    <Stop Name="Tallinna Ülikool"/>
+    <Stop Name="L.Koidula"/>
+    <Stop Name="Kadriorg"/>
+  </Route>
+  <Route Type="Tram" Number="4" Name="Tondi - Ülemiste">
+    <Stop Name="Tondi"/>
+    <Stop Name="Kalev"/>
+    <Stop Name="Tallinn-Väike"/>
+    <Stop Name="Vineeri"/>
+    <Stop Name="Kosmos"/>
+    <Stop Name="Vabaduse väljak"/>
+    <Stop Name="Viru"/>
+    <Stop Name="Hobujaama"/>
+    <Stop Name="Paberi"/>
+    <Stop Name="Keskturg"/>
+    <Stop Name="Autobussijaam"/>
+    <Stop Name="Lubja"/>
+    <Stop Name="Majaka"/>
+    <Stop Name="Sikupilli"/>
+    <Stop Name="Majaka põik"/>
+    <Stop Name="Väike-Paala"/>
+    <Stop Name="Ülemiste"/>
+  </Route>
+</Stops>

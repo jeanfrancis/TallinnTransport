@@ -18,40 +18,22 @@ namespace TallinnTransport
         public Routes()
         {
             InitializeComponent();
-            //if(!App.ViewModel.IsDataLoaded)
-            //    App.ViewModel.LoadData();
             DataContext = App.ViewModel;
             this.RouteList.SelectionChanged += new SelectionChangedEventHandler(RouteList_SelectionChanged);
         }
 		
         protected override void OnNavigatedTo(System.Windows.Navigation.NavigationEventArgs e)
         {
-            string routeType = "";
-            if (NavigationContext.QueryString.TryGetValue("routeType", out routeType))
-            {
-                if (routeType.Equals("bus"))
-                {
-                    this.PageTitle.Text = "Tallinn:Bus";
-                    App.ViewModel.LoadData("Bus");
-                }
-                else if (routeType.Equals("trolley"))
-                {
-                    this.PageTitle.Text = "Tallinn:Trolley";
-                    App.ViewModel.LoadData("Trolley");
-                }
-                else if (routeType.Equals("tram"))
-                {
-                    this.PageTitle.Text = "Tallinn:Tram";
-                    App.ViewModel.LoadData("Tram");
-                }
-            }
+            this.PageTitle.Text = "Tallinn:" + App.ViewModel.RouteType;
+            App.ViewModel.LoadRoutes();
         }
 
         void RouteList_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             ListBox list = sender as ListBox;
-            ItemViewModel item = list.SelectedItem as ItemViewModel;
-            NavigationService.Navigate(new Uri("/Stops.xaml?routeType=trolley&route="+item.Number, UriKind.Relative));
+            RouteViewModel item = list.SelectedItem as RouteViewModel;
+            App.ViewModel.RouteNumber = "1";
+            NavigationService.Navigate(new Uri("/Stops.xaml", UriKind.Relative));
         }
     }
 }

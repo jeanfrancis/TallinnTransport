@@ -19,26 +19,28 @@ namespace TallinnTransport
         {
             InitializeComponent();
         }
-		
+
+        private void TramButton_Click(object sender, System.Windows.RoutedEventArgs e)
+        {
+            App.ViewModel.RouteType = "Tram";
+            NavigationService.Navigate(new Uri("/Routes.xaml", UriKind.Relative));
+        }
+
         private void TrolleyButton_Click(object sender, System.Windows.RoutedEventArgs e)
         {
-        	NavigationService.Navigate(new Uri("/Routes.xaml?routeType=trolley", UriKind.Relative));
+            App.ViewModel.RouteType = "Trolley";
+        	NavigationService.Navigate(new Uri("/Routes.xaml", UriKind.Relative));
         }
 
         private void BusButton_Click(object sender, System.Windows.RoutedEventArgs e)
         {
-            NavigationService.Navigate(new Uri("/Routes.xaml?routeType=bus", UriKind.Relative));
-        }
-
-        private void TramButton_Click(object sender, System.Windows.RoutedEventArgs e)
-        {
-            NavigationService.Navigate(new Uri("/Routes.xaml?routeType=tram", UriKind.Relative));
+            App.ViewModel.RouteType = "Bus";
+            NavigationService.Navigate(new Uri("/Routes.xaml", UriKind.Relative));
         }
 
         private void InfoButton_Click(object sender, System.Windows.RoutedEventArgs e)
         {
-            NavigationService.Navigate(new Uri("/Routes.xaml?routeType=info", UriKind.Relative));
+            NavigationService.Navigate(new Uri("/Info.xaml", UriKind.Relative));
         }
-		
     }
 }

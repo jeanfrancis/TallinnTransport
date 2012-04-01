@@ -16,34 +16,24 @@ namespace TallinnTransport
 {
     public partial class Stops : PhoneApplicationPage
     {
-        public Collection<Stop> StopCollection { get; set; }
-
         public Stops()
         {
             InitializeComponent();
-            StopCollection = new Collection<Stop>();
+            DataContext = App.ViewModel;
+            this.StopList.SelectionChanged += new SelectionChangedEventHandler(RouteList_SelectionChanged);
         }
 
         protected override void OnNavigatedTo(System.Windows.Navigation.NavigationEventArgs e)
         {
-            string route = "";
-            string routeType = "";
-            if (NavigationContext.QueryString.TryGetValue("route", out route) && NavigationContext.QueryString.TryGetValue("routeType", out routeType))
-            {
-                this.StopCollection.Add(new Stop("1231", "Kesklin"));
-            }
+            App.ViewModel.LoadStops();
         }
-    }
 
-    public class Stop
-    {
-        public string Id { get; set; }
-        public string Name { get; set; }
-
-        public Stop(string Id, string Name)
+        void RouteList_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            this.Id = Id;
-            this.Name = Name;
+            ListBox list = sender as ListBox;
+            RouteViewModel item = list.SelectedItem as RouteViewModel;
+            App.ViewModel.RouteNumber = item.Number;
+            NavigationService.Navigate(new Uri("/Stops.xaml", UriKind.Relative));
         }
     }
 }

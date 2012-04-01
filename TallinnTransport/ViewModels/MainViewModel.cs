@@ -21,57 +21,54 @@ namespace TallinnTransport
 {
     public class MainViewModel : INotifyPropertyChanged
     {
+        public ObservableCollection<RouteViewModel> Routes { get; private set; }
+        public ObservableCollection<StopViewModel> Stops { get; private set; }
+        public ObservableCollection<RouteViewModel> Times { get; private set; }
+
+        public string RouteType { get; set; }
+        public string RouteNumber { get; set; }
+        public string StopId { get; set; }
+
         public MainViewModel()
         {
-            this.Trams = new ObservableCollection<ItemViewModel>();
-            this.Trolleis = new ObservableCollection<ItemViewModel>();
-            this.Busses = new ObservableCollection<ItemViewModel>();
+            this.Routes = new ObservableCollection<RouteViewModel>();
+            this.Stops = new ObservableCollection<StopViewModel>();
+            this.Times = new ObservableCollection<RouteViewModel>();
         }
 
-        public ObservableCollection<ItemViewModel> Trams { get; private set; }
-        public ObservableCollection<ItemViewModel> Trolleis { get; private set; }
-        public ObservableCollection<ItemViewModel> Busses { get; private set; }
-
-
-        private string _routeType = "bus";
-        public string RouteType
-        {
-            get
-            {
-                return _routeType;
-            }
-            set
-            {
-                if (value != _routeType)
-                {
-                    _routeType = value;
-                    NotifyPropertyChanged("RouteType");
-                }
-            }
-        }
-
-        public bool IsDataLoaded
-        {
-            get;
-            private set;
-        }
-
-        public void LoadData(string RouteType)
+        public void LoadRoutes()
         {            
-           StreamResourceInfo xml = Application.GetResourceStream(new Uri("routes.xml", UriKind.Relative));
+            StreamResourceInfo xml = Application.GetResourceStream(new Uri("DataSource/routes.xml", UriKind.Relative));
             XDocument doc = XDocument.Load(xml.Stream);
-            var routes = from n in doc.Descendants(RouteType).Descendants("Route")
-                       select new ItemViewModel()
+            var routes = from n in doc.Descendants(this.RouteType).Descendants("Route")
+                       select new RouteViewModel()
                        {
                            Number = n.Attribute("Number").Value,
                            Name = n.Attribute("Name").Value
                        };
-           //App.ViewModel.Trams = new ObservableCollection<ItemViewModel>(trams);
-            App.ViewModel.Trams.Clear();
+            App.ViewModel.Routes.Clear();
             foreach (var x in routes)
-                App.ViewModel.Trams.Add(x);
+            {
+                App.ViewModel.Routes.Add(x);
+            }
+            xml.Stream.Close();
+        }
 
-            this.IsDataLoaded = true;
+        public void LoadStops()
+        {
+            StreamResourceInfo xml = Application.GetResourceStream(new Uri("DataSource/stops.xml", UriKind.Relative));
+            XDocument doc = XDocument.Load(xml.Stream);
+            var stops = from n in doc.Descendants("Stop")
+                         select new StopViewModel()
+                         {
+                             //Number = n.Attribute("Number").Value,
+                             Name = n.Attribute("Name").Value
+                         };
+            App.ViewModel.Stops.Clear();
+            foreach (var x in stops)
+            {
+                App.ViewModel.Stops.Add(x);
+            }
         }
 
         public event PropertyChangedEventHandler PropertyChanged;

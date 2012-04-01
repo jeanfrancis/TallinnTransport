@@ -1,4 +1,4 @@
-<TallinnRoutes>
+<Routes>
   <Tram>
     <Route Number="1" Name="Kopli - Kadriorg"/>
     <Route Number="2" Name="Kopli - Ülemiste"/>
@@ -80,4 +80,4 @@
     <Route Number="68" Name="Priisle - Estonia"/>
     <Route Number="90K" Name="Lennujaam - Kesklinn"/>
   </Bus>
-</TallinnRoutes>
+</Routes>

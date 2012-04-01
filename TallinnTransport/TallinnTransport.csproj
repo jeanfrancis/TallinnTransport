@@ -74,7 +74,8 @@
     <Compile Include="Routes.xaml.cs">
       <DependentUpon>Routes.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ViewModels\ItemViewModel.cs" />
+    <Compile Include="ViewModels\StopViewModel.cs" />
+    <Compile Include="ViewModels\RouteViewModel.cs" />
     <Compile Include="ViewModels\MainViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -112,7 +113,8 @@
     <Resource Include="Marketplace_Desktop_200x200.png" />
     <Resource Include="Marketplace_Device_173x173.png" />
     <Resource Include="Marketplace_Device_99x99.png" />
-    <Content Include="routes.xml" />
+    <Content Include="DataSource\stops.xml" />
+    <Content Include="DataSource\routes.xml" />
     <Content Include="SplashScreenImage.jpg" />
     <Resource Include="img\Train.png" />
   </ItemGroup>
