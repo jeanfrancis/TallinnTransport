@@ -53,6 +53,7 @@ namespace TallinnTransport
     }
 
 	public class Route {
+        public string Type { get; set; }
 		public string Number {get; set;}
 		public string Name {get; set;}
 		

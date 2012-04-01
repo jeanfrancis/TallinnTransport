@@ -14,11 +14,12 @@ namespace TallinnTransport
 {
     public class TallinnRoutes
     {
+        public Collection<Route> Tram { get; set; }
+
         public Collection<Route> Trolley { get; set; }
 
         public Collection<Route> Bus { get; set; }
 
-        public Collection<Route> Tram { get; set; }
 
         public TallinnRoutes()
         {

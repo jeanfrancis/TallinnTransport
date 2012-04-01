@@ -1,0 +1,83 @@
+<TallinnTransport:TallinnRoutes xmlns:TallinnTransport="clr-namespace:TallinnTransport">
+  <TallinnTransport:TallinnRoutes.Tram>
+    <TallinnTransport:Route Number="1" Name="Kopli - Kadriorg"/>
+    <TallinnTransport:Route Number="2" Name="Kopli - Ülemiste"/>
+    <TallinnTransport:Route Number="3" Name="Tondi - Kadriorg"/>
+    <TallinnTransport:Route Number="4" Name="Tondi - Ülemiste"/>
+  </TallinnTransport:TallinnRoutes.Tram>
+  <TallinnTransport:TallinnRoutes.Trolley>
+    <TallinnTransport:Route Number="1" Name="Mustamäe - Kaubamaja"/>
+    <TallinnTransport:Route Number="2" Name="Mustamäe - Estonia"/>
+    <TallinnTransport:Route Number="3" Name="Mustamäe - Kaubamaja"/>
+    <TallinnTransport:Route Number="4" Name="Keskuse - Balti jaam"/>
+    <TallinnTransport:Route Number="5" Name="Mustamäe - Balti jaam"/>
+    <TallinnTransport:Route Number="6" Name="Väike-Õismäe - Kaubamaja"/>
+    <TallinnTransport:Route Number="7" Name="Väike-Õismäe - Balti jaam"/>
+    <TallinnTransport:Route Number="9" Name="Keskuse - Kopli"/>
+  </TallinnTransport:TallinnRoutes.Trolley>
+  <TallinnTransport:TallinnRoutes.Bus>
+    <TallinnTransport:Route Number="1A" Name="Viru keskus - Viimsi haigla"/>
+    <TallinnTransport:Route Number="2" Name="Mõigu - Reisisadam (A-terminal)"/>
+    <TallinnTransport:Route Number="3" Name="Veerenni - Randla"/>
+    <TallinnTransport:Route Number="4" Name="Väike-Õismäe - Tiskre"/>
+    <TallinnTransport:Route Number="5" Name="Männiku - Metsakooli"/>
+    <TallinnTransport:Route Number="6" Name="Merivälja Pansion - Metsakooli"/>
+    <TallinnTransport:Route Number="7" Name="Seli - Sõjamäe"/>
+    <TallinnTransport:Route Number="8" Name="Viru keskus - Äigrumäe"/>
+    <TallinnTransport:Route Number="9" Name="Kadaka - Kunstiakadeemia (express)"/>
+    <TallinnTransport:Route Number="10" Name="Väike-Õismäe - Vana-Pääsküla"/>
+    <TallinnTransport:Route Number="11" Name="Kadaka - Kunstiakadeemia (express)"/>
+    <TallinnTransport:Route Number="12" Name="Väike-Õismäe - Priisle (express)"/>
+    <TallinnTransport:Route Number="13" Name="Väike-Õismäe - Seli"/>
+    <TallinnTransport:Route Number="14" Name="Viru keskus - Vana-Pääsküla (express)"/>
+    <TallinnTransport:Route Number="15" Name="Viru keskus - Sõjamäe"/>
+    <TallinnTransport:Route Number="16" Name="Väike-Õismäe - Tallinn-Väike"/>
+    <TallinnTransport:Route Number="17" Name="J.Sütiste tee - Autobussijaam"/>
+    <TallinnTransport:Route Number="17A" Name="J.Sütiste tee - Juhkentali"/>
+    <TallinnTransport:Route Number="18" Name="Viru keskus - Laagri"/>
+    <TallinnTransport:Route Number="19" Name="Viru keskus - P.Pinna"/>
+    <TallinnTransport:Route Number="20" Name="Reisisadam (D-terminal) - Pääsküla jaam"/>
+    <TallinnTransport:Route Number="20A" Name="Laagri alevik - Kunstiakadeemia"/>
+    <TallinnTransport:Route Number="21" Name="Balti jaam - Landi"/>
+    <TallinnTransport:Route Number="21A" Name="Väike-Õismäe - Kakumäe"/>
+    <TallinnTransport:Route Number="21B" Name="Balti jaam - Kakumäe"/>
+    <TallinnTransport:Route Number="22" Name="Väike-Õismäe - Vabaduse väljak"/>
+    <TallinnTransport:Route Number="23" Name="Kadaka - Autobussijaam"/>
+    <TallinnTransport:Route Number="26" Name="Väike-Õismäe - Paljassaare"/>
+    <TallinnTransport:Route Number="26A" Name="Väike-Õismäe - Paljassaare põik"/>
+    <TallinnTransport:Route Number="27" Name="Harkujärve - Laagri alevik"/>
+    <TallinnTransport:Route Number="28" Name="Veerenni - Väike-Õismäe"/>
+    <TallinnTransport:Route Number="29" Name="Viru keskus - Iru Hooldekodu - Priisle"/>
+    <TallinnTransport:Route Number="30" Name="Seli - Iru - Kärmu"/>
+    <TallinnTransport:Route Number="31" Name="P.Pinna - Kunstiakadeemia"/>
+    <TallinnTransport:Route Number="32" Name="Männiku - Kopli"/>
+    <TallinnTransport:Route Number="33" Name="Männiku - Kopli"/>
+    <TallinnTransport:Route Number="34A" Name="Viru keskus - Muuga aedlinn"/>
+    <TallinnTransport:Route Number="35" Name="Viru keskus - Seli"/>
+    <TallinnTransport:Route Number="36" Name="Väike-Õismäe - Viru"/>
+    <TallinnTransport:Route Number="38" Name="Viru keskus - Muuga"/>
+    <TallinnTransport:Route Number="39" Name="Veerenni - Lasnamägi"/>
+    <TallinnTransport:Route Number="40" Name="Viru keskus - Pelguranna"/>
+    <TallinnTransport:Route Number="44" Name="Viru keskus - P.Pinna"/>
+    <TallinnTransport:Route Number="46" Name="Väike-Õismäe - Kunstiakadeemia (express)"/>
+    <TallinnTransport:Route Number="47" Name="Väike-Õismäe - Autobussijaam (express)"/>
+    <TallinnTransport:Route Number="48" Name="Viru keskus - Pelguranna (express)"/>
+    <TallinnTransport:Route Number="49" Name="P.Pinna - Merivälja"/>
+    <TallinnTransport:Route Number="50" Name="Seli - Pae"/>
+    <TallinnTransport:Route Number="51" Name="Viru keskus - Priisle"/>
+    <TallinnTransport:Route Number="53" Name="Priisle - Kunstiakadeemia (express)"/>
+    <TallinnTransport:Route Number="54" Name="Mereakadeemia - Estonia"/>
+    <TallinnTransport:Route Number="55" Name="P.Pinna - Pae"/>
+    <TallinnTransport:Route Number="56" Name="Seli - Kunstiakadeemia (express)"/>
+    <TallinnTransport:Route Number="57" Name="Raudalu - Kalev"/>
+    <TallinnTransport:Route Number="58" Name="Priisle - Pae"/>
+    <TallinnTransport:Route Number="59" Name="Balti jaam - Paljassaare"/>
+    <TallinnTransport:Route Number="60" Name="Priisle - Maneezi"/>
+    <TallinnTransport:Route Number="61" Name="Astangu - Järve haigla"/>
+    <TallinnTransport:Route Number="63" Name="Priisle - Maneezi"/>
+    <TallinnTransport:Route Number="65" Name="Lasnamäe - Lennujaam"/>
+    <TallinnTransport:Route Number="67" Name="Seli - Estonia"/>
+    <TallinnTransport:Route Number="68" Name="Priisle - Estonia"/>
+    <TallinnTransport:Route Number="90K" Name="Lennujaam - Kesklinn"/>
+  </TallinnTransport:TallinnRoutes.Bus>
+</TallinnTransport:TallinnRoutes>
