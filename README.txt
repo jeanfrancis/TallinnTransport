@@ -1,4 +1,5 @@
-Timetables:Tallinn
+Timetable:TLL (Short name)
+Timetable:Tallinn (Full name)
 ==================
 
 Tallinn public transport timetables in your Windows Phone.
@@ -40,6 +41,7 @@ TODO
 - Use Clock to hide past times
 - Trip Planner: find shortest route / time / money between two stops
 - Settings for enable/disable GPS stop location and update XML data
+- Upload to Marketplace: http://create.msdn.com/en-US/home/about/app_submission_walkthrough_upload
 
 
 Resources
